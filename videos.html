@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/swup@3"></script>
+  <script defer src="main.js"></script>
+  <script src="https://kit.fontawesome.com/b500abcea4.js" crossorigin="anonymous"></script>
+  <title>Facebook clone website - videos</title>
+</head>
+<body>
+  <main id="swup" class="transition-fade">
+    <nav class="navbar">
+      <div class="home icons">
+        <a href="/index.html"><i class="fa-solid fa-house fa-lg"></i></a>
+      </div>
+      <div class="friends icons">
+        <a href="/friends.html"><i class="fa-solid fa-user-group fa-lg"></i></a>
+      </div>
+      <div class="messages icons">
+        <a href="/messenger.html"><i class="fa-brands fa-facebook-messenger fa-xl"></i></a>
+      </div>
+      <div class="reels icons">
+        <a class="active" href="/videos.html"><i class="fa-solid fa-tv fa-lg"></i></a>
+      </div>
+      <div class="notifications icons">
+        <a href="/notifications.html"><i class="fa-solid fa-bell fa-lg"></i></a>
+      </div>
+      <div class="profile icons">
+        <a href="/groups.html"><i class="fa-solid fa-people-group fa-xl"></i></a>
+      </div>
+    </nav>
+    <div class="videos-head1">
+      <div class="videos-txt">
+        Videos
+      </div>
+      <div class="videos-icons">
+        <a href="/your videos.html"><div class="videos-user-icon">
+          <i class="fa-solid fa-user fa-lg"></i>
+        </div>
+        </a>
+        <a href="/search videos.html"><div class="videos-search-icon">
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </div>
+        </a>
+      </div>
+    </div>
+    <div class="videos-head-foot">
+      <div class="videos-head-foot-txt">
+        Play videos automatically
+      </div>
+      <div class="head-foot-btn">
+        <a href="#"><img height="25" src="images/btn.png"></a>
+      </div>
+    </div>
+    <div class="videohead">
+      <div class="video-types active">
+        <div class="video-icon">
+          <i class="fa-solid fa-tv"></i>
+        </div>
+        <div class="video-txt">
+          For You
+        </div>
+      </div>
+      <div class="video-types">
+        <div class="video-icon">
+          <img height="20px" src="images/reels.png">
+        </div>
+        <div class="video-txt">
+          Reels
+        </div>
+      </div>
+      <div class="video-types">
+        <div class="video-icon">
+          <i class="fa-solid fa-bookmark"></i>
+        </div>
+        <div class="video-txt">
+          Saved
+        </div>
+      </div>
+      <div class="video-types following">
+        <div class="video-icon">
+          <img height="30px" src="images/following.png">
+        </div>
+        <div class="video-txt">
+          Following
+        </div>
+      </div>
+      <div class="video-types">
+        <div class="video-icon">
+          <img height="22px" src="images/gaming.png">
+        </div>
+        <div class="video-txt">
+          Gaming
+        </div>
+      </div>
+      <div class="video-types">
+        <div class="video-icon">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <div class="video-txt">
+          Music
+        </div>
+      </div>
+    </div>
+    <h4 class="video-h4">Suggested for you</h4>
+    <div class="video-body">
+      <div class="body-img">
+        <img src="images/videos.webp">
+      </div>
+      <div class="videos-body-txt">
+        No videos available right now, please try again later.
+      </div>
+    </div>
+    <script>
+      videoTypes = document.querySelectorAll(".video-types");
+      videoTypes.forEach(element => {
+        element.addEventListener("click", function() {
+          videoTypes.forEach(video => video.classList.remove("active"))
+          this.classList.add("active");
+        })
+      })
+    </script>
+  </main>
+</body>
+</html>

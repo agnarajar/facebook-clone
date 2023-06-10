@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Facebook clone website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/swup@3"></script>
+  <script defer src="main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b500abcea4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="preloader">
+    <div class="index-body">
+      <div class="index-logo">
+        <img src="images/index logo.jpg">
+      </div>
+      <div class="index-txt">
+        by
+        <p>
+          Rangaraja Chowdari
+        </p>
+      </div>
+      <div class="loading-img">
+        <img src="images/loading.gif">
+      </div>
+    </div>
+  </div>
+  <main id="swup" class="transition-fade">
+    <div class="nav">
+      <div class="facebook">
+        <img height="25" src="images/fbname.png">
+      </div>
+      <div class="nav-icons">
+        <a class="menu" href="/search home.html"><div class="home-search-icon">
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </div>
+        </a>
+        <a class="menu" href="/menu.html"><div class="home-menu-icon">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        </a>
+      </div>
+    </div>
+    <nav>
+      <div class="home icons">
+        <a class="active" href="/index.html"><i class="fa-solid fa-house fa-lg"></i></a>
+      </div>
+      <div class="friends icons">
+        <a href="/friends.html"><i class="fa-solid fa-user-group fa-lg"></i></a>
+      </div>
+      <div class="messages icons">
+        <a href="/messenger.html"><i class="fa-brands fa-facebook-messenger fa-xl"></i></a>
+      </div>
+      <div class="reels icons">
+        <a href="/videos.html"><i class="fa-solid fa-tv fa-lg"></i></a>
+      </div>
+      <div class="notifications icons">
+        <a href="/notifications.html"><i class="fa-solid fa-bell fa-lg"></i></a>
+      </div>
+      <div class="profile icons">
+        <a href="/groups.html"><i class="fa-solid fa-people-group fa-xl"></i></a>
+      </div>
+    </nav>
+    <!--      nav bar completed     -->
+    <div class="layer1">
+      <div class="right">
+        <div class="img">
+          <img src="images/My img.png">
+        </div>
+        <div class="msg">
+          <input type="text" class="home-searchinput" placeholder="What's on your mind?">
+        </div>
+      </div>
+      <div class="left">
+        <i class="fa-solid fa-images fa-2xl"></i>
+        <div class="photo-txt">
+          Photo
+        </div>
+      </div>
+    </div>
+    <!--  first layer completed   -->
+    <div class="story-bar">
+      <a href="#"><div class="storys story1">
+        <div class="story-add">
+          <i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i>
+        </div>
+        <div class="story-add-txt">
+          Add to <br> &nbsp;story
+        </div>
+      </div>
+      </a>
+      <a href="#"><div class="storys story-user story2">
+        <div class="story-user">
+          <img src="images/manoj.jpg">
+        </div>
+        <div class="story-user-txt">
+          Manoj Reddy
+        </div>
+      </div>
+      </a>
+      <a href="#"><div class="storys story-user story3">
+        <div class="story-user online">
+          <img src="images/chandra mouli.jpg">
+        </div>
+        <div class="story-user-txt">
+          Chandra Mouli
+        </div>
+      </div>
+      </a>
+      <a href="#"><div class="storys story-user story4">
+        <div class="story-user">
+          <img src="images/srinivas.jpg">
+        </div>
+        <div class="story-user-txt">
+          Srinivas
+        </div>
+      </div>
+      </a>
+      <a href="#"><div class="storys story-user story5">
+        <div class="story-user online">
+          <img src="images/karthik.jpg">
+        </div>
+        <div class="story-user-txt">
+          Karthik
+        </div>
+      </div>
+      </a>
+    </div>
+    <!--    story layer completed    -->
+    <div class="post">
+      <div class="post-head">
+        <div class="head-user">
+          <img src="images/My img.png" height="50px" style="border-radius:50%;">
+          <p>
+            <b>Rangaraja Chowdari</b><br><span style="font-size:13px; color:rgb(0,0,0,0.5);">Feb 19, 2023 • </span><i class="fa-solid fa-earth-americas fa-sm" style="color: rgb(0,0,0,0.5)"></i>
+          </p>
+        </div>
+        <div class="head-icons">
+          <i class="fa-solid fa-ellipsis fa-lg" style="color:rgb(0,0,0,0.5);"></i>
+        </div>
+      </div>
+      <div class="post-body">
+        <img src="images/my gift.jpg">
+        <div class="body-txt">
+          <div class="like-icon">
+            <i class="fa-solid fa-thumbs-up fa-sm" style="color:white;"></i>
+          </div>
+          <div class="like-txt">
+            Chandra mouli and 36 others
+          </div>
+        </div>
+      </div>
+      <div class="post-foot">
+        <a href="#"><div class="foot-icons icon-like">
+          <i class="fa-solid fa-thumbs-up fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+        <a href="#"><div class="foot-icons icon-comment">
+          <i class="fa-solid fa-message fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+        <a href="#"><div class="foot-icons icon-share">
+          <i class="fa-solid fa-share fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-head">
+        <div class="head-user">
+          <img src="images/My img.png" height="50px" style="border-radius:50%;">
+          <p>
+            <b>Rangaraja Chowdari</b><br><span style="font-size:13px; color:rgb(0,0,0,0.5);">Jan 24, 2023 • </span><i class="fa-solid fa-earth-americas fa-sm" style="color: rgb(0,0,0,0.5)"></i>
+          </p>
+        </div>
+        <div class="head-icons">
+          <i class="fa-solid fa-ellipsis fa-lg" style="color:rgb(0,0,0,0.5);"></i>
+        </div>
+      </div>
+      <div class="post-body">
+        <img src="images/friends.jpg">
+        <div class="body-txt">
+          <div class="like-icon">
+            <i class="fa-solid fa-thumbs-up fa-sm" style="color:white;"></i>
+          </div>
+          <div class="like-txt">
+            Manoj reddy and 32 others
+          </div>
+        </div>
+      </div>
+      <div class="post-foot">
+        <a href="#"><div class="foot-icons icon-like">
+          <i class="fa-solid fa-thumbs-up fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+        <a href="#"><div class="foot-icons icon-comment">
+          <i class="fa-solid fa-message fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+        <a href="#"><div class="foot-icons icon-share">
+          <i class="fa-solid fa-share fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-head">
+        <div class="head-user">
+          <img src="images/My img.png" height="50px" style="border-radius:50%;">
+          <p>
+            <b>Rangaraja Chowdari</b><br><span style="font-size:13px; color:rgb(0,0,0,0.5);">Dec 17, 2022 • </span><i class="fa-solid fa-earth-americas fa-sm" style="color: rgb(0,0,0,0.5)"></i>
+          </p>
+        </div>
+        <div class="head-icons">
+          <i class="fa-solid fa-ellipsis fa-lg" style="color:rgb(0,0,0,0.5);"></i>
+        </div>
+      </div>
+      <div class="post-body">
+        <img src="images/my photo.jpg">
+        <div class="body-txt">
+          <div class="like-icon">
+            <i class="fa-solid fa-thumbs-up fa-sm" style="color:white;"></i>
+          </div>
+          <div class="like-txt">
+            Karthik and 35 others
+          </div>
+        </div>
+      </div>
+      <a href="#"><div class="post-foot">
+        <div class="foot-icons icon-like">
+          <i class="fa-solid fa-thumbs-up fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+      </a>
+        <a href="#"><div class="foot-icons icon-comment">
+          <i class="fa-solid fa-message fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+        <a href="#"><div class="foot-icons icon-share">
+          <i class="fa-solid fa-share fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-head">
+        <div class="head-user">
+          <img src="images/My img.png" height="50px" style="border-radius:50%;">
+          <p>
+            <b>Rangaraja Chowdari</b><br><span style="font-size:13px; color:rgb(0,0,0,0.5);">Jan 25, 2021 • </span><i class="fa-solid fa-earth-americas fa-sm" style="color: rgb(0,0,0,0.5)"></i>
+          </p>
+        </div>
+        <div class="head-icons">
+          <i class="fa-solid fa-ellipsis fa-lg" style="color:rgb(0,0,0,0.5);"></i>
+        </div>
+      </div>
+      <div class="post-body">
+        <img src="images/sbcs.jpg">
+        <div class="body-txt">
+          <div class="like-icon">
+            <i class="fa-solid fa-thumbs-up fa-sm" style="color:white;"></i>
+          </div>
+          <div class="like-txt">
+            Hemanth and 30 others
+          </div>
+        </div>
+      </div>
+      <div class="post-foot">
+        <a href="#"><div class="foot-icons icon-like">
+          <i class="fa-solid fa-thumbs-up fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+        <a href="#"><div class="foot-icons icon-comment">
+          <i class="fa-solid fa-message fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+        <a href="#"><div class="foot-icons icon-share">
+          <i class="fa-solid fa-share fa-lg" style="color:rgb(0,0,0,0.7);"></i>
+          <span></span>
+        </div>
+        </a>
+      </div>
+    </div>
+  </main>
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function() {
+      loader.style.display = "none";
+    })
+  </script>
+  <!--  <script>
+              navbar = document.querySelector(".navbar").querySelectorAll("a");
+              console.log(navbar);
+              navbar.forEach(element => {
+                element.addEventListener("click", function() {
+                  navbar.forEach(nav => nav.classList.remove("active"))
+                  this.classList.add("active");
+                })
+              })
+            </script>   -->
+</body>
+</html>

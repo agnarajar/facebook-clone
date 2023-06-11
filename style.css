@@ -90,7 +90,7 @@ nav {
   border-bottom: 2px solid lightgrey;
 }
 .navbar {
-  padding: 20px 0px;
+  padding-top: 20px;
 }
 nav a {
   text-decoration: none;
@@ -133,6 +133,7 @@ nav a.active {
 }
 .right {
   display: flex;
+  width: 100%;
 }
 .right .img img {
   height: 40px;
@@ -153,22 +154,28 @@ nav a.active {
   bottom: 1px;
   right: 0px;
 }
+.right .msg{
+  width: 100%;
+  display: flex;
+}
 .home-searchinput {
   background-color: rgb(0,0,0,0.1);
   margin: 0px 0px 0px 6px;
   border: none;
-  padding: 13px 40px 13px 10px;
+  width: 100%;
   border-radius: 30px;
   font-size: 16px;
   color: rgb(0,0,0);
 }
 .home-searchinput::placeholder {
   color: rgb(0,0,0,0.8);
+  padding-left: 15px;
 }
 .left {
   display: block;
   text-align: center;
   width: 50px;
+  padding-left: 5px;
 }
 .photo-txt {
   padding-top: 8px;

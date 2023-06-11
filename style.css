@@ -310,15 +310,22 @@ nav a.active {
 }
 .post-foot {
   display: flex;
+  gap: 10px;
   padding: 5px 10px;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 3px solid rgb(0,0,0,0.3);
 }
-.foot-icons {
+.post-foot a{
   background-color: rgb(0,0,0,0.1);
-  padding: 15px 50px;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+  width: 100%;
   border-radius: 20px;
 }
+.post-foot a:hover, .post-foot a:active{
+  background-color: rgb(0,127,255,0.3);
+ }
 .foot-icons span {
   font-size: 15px;
 }

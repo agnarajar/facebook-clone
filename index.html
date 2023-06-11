@@ -109,7 +109,7 @@
         </div>
       </div>
       </a>
-      <a href="#"><div class="storys story-user story2">
+      <a href="https://m.facebook.com/profile.php?id=100033053840699"><div class="storys story-user story2">
         <div class="story-user">
           <img src="images/manoj.jpg">
         </div>
@@ -127,7 +127,7 @@
         </div>
       </div>
       </a>
-      <a href="#"><div class="storys story-user story4">
+      <a href="https://m.facebook.com/srinu.bahubali.16"><div class="storys story-user story4">
         <div class="story-user">
           <img src="images/srinivas.jpg">
         </div>
@@ -311,6 +311,60 @@
         </a>
       </div>
     </div>
+    <div class="popup-image">
+
+      <span>X</span>
+
+      <img src="">
+
+    </div>
+   <script>
+
+    function initializeImagePopup() {
+
+      const popupImage = document.querySelector('.popup-image');
+
+      const popupImageImg = document.querySelector('.popup-image img');
+
+      document.querySelectorAll('.post-body img').forEach(image => {
+
+        image.onclick = () => {
+
+          popupImageImg.src = image.getAttribute('src');
+
+          popupImage.classList.add('show');
+
+          setTimeout(() => {
+
+            popupImageImg.classList.add('show');
+
+          }, 10);
+
+        };
+
+      });
+
+      document.querySelector('.popup-image span').onclick = () => {
+
+        popupImageImg.classList.remove('show');
+
+        popupImage.classList.remove('show');
+
+        setTimeout(() => {
+
+          popupImage.classList.remove('hide');
+
+        }, 300);
+
+      };
+
+    }
+
+    initializeImagePopup();
+
+    document.addEventListener('swup:contentReplaced', initializeImagePopup);
+
+  </script>
   </main>
   <script>
     var loader = document.getElementById("preloader");

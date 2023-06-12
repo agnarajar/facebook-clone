@@ -385,9 +385,9 @@ nav a.active {
 
 .popup-image img {
 
-  width: 95%;
+  width: 90%;
 
-  overflow-y: auto;
+  max-height: 95%;
   
   border: 1px solid white;
 
